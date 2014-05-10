@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/show_centermap" android:title="@string/show_centermap"></item>
+     <item android:id="@+id/menu_track" android:title="@string/menu_track" android:icon="@drawable/ic_menu_mytrack">
+        <menu>
+            <item android:id="@+id/show_tracklist"  android:title="@string/showtracklist" />
+            <item android:id="@+id/menu_track_load" android:title="@string/track_load_track"/>
+        </menu>
+    </item>
+     
+  <!--   <item android:id="@+id/menu_route" android:title="@string/menu_route" android:icon="@drawable/ic_menu_myroute" android:showAsAction="always"> 
+         gives error  12_05_16 android:show as action not found-->
+   <item android:id="@+id/menu_route" android:title="@string/menu_route" android:icon="@drawable/ic_menu_myroute">
+	 <menu> 
+	     <item android:id="@+id/menu_route_show" android:title="@string/route_show_route"/>
+	     <item android:id="@+id/menu_route_show_without_points" android:title="@string/route_show_route_without_points"/>  
+	     <item android:id="@+id/menu_route_new" android:title="@string/route_new_route"/>
+	     <item android:id="@+id/menu_route_edit" android:title="@string/route_edit_route"/>
+	     <item android:id="@+id/menu_route_delete" android:title="@string/route_delete_route"/>
+	     <item android:id="@+id/menu_route_save" android:title="@string/route_save_route"/>
+	     <item android:id="@+id/menu_route_load" android:title="@string/route_load_route"/>
+	     <item android:id="@+id/menu_route_trace" android:title="@string/route_trace_route"/>
+	 </menu>
+	</item>
+	
+	 <item android:id="@+id/pick_mapfile" android:title="@string/pick_map_file"></item>
+	<item android:id="@+id/show_targetList" android:title="@string/show_targetList"></item>
+	
+	
+	<item android:id="@+id/delete_old_targets" android:title="@string/delete_old_targets"></item>
+    <item android:id="@+id/deactivate_old_targets" android:title="@string/deactivate_old_targets"></item>
+   
+	<item android:id="@+id/showLogMonitor" android:title="@string/showlog"></item>
+    <item android:id="@+id/menu_screenshot" android:title="@string/menu_screenshot" android:icon="@drawable/ic_menu_camera" >
+		<menu>
+			<item android:id="@+id/menu_screenshot_jpeg" android:title="@string/menu_screenshot_jpeg" />
+			<item android:id="@+id/menu_screenshot_png" android:title="@string/menu_screenshot_png" />
+		</menu>
+	</item>
+    
+    
+    
+</menu>
+<!-- disabled items 12_04_18
+   <item android:id="@+id/show_sattelitemap" android:title="@string/showssattelitemap"></item>
+    <item android:id="@+id/show_speed_marker" android:title="@string/hidespeedmarker"></item>
+ -->
+ 
+ <!-- disabled 13_2_10
+ <item android:id="@+id/menu_showDataScreen" android:title="@string/menu_show_data_screen"></item>
+  -->

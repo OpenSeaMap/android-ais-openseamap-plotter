@@ -1,0 +1,33 @@
+Achtung: 
+
+Alle Daten werden nur als Empfehlung bereitgestellt.
+
+Sie uebernehmen die volle Verantwortung und das Risiko fuer den Gebrauch der Empfehlungen und die Nutzung dieser Software.
+
+Die Daten duerfen auf keinen Fall fuer die Sicherheit der Navigation genutzt werden.
+
+Die Positionen der Seezeichen koennen unvollstaendig sein.
+Die Positionen der AIS-Targets koennen aelter als 15 min sein und unvollstaendig.
+
+Die Daten werden nur zu Informationszwecken bereitgestellt. 
+
+
+Attention:
+
+All Data are only hints.
+The user of this software takes all risks for the use of this software.
+The data must not be used for navigation.
+The positions of the seamarks and AIS-Targets may be out of date and incomplete.
+
+Version 058 Build 01
+
+Diese Software benutzt die mapsforge-Bibliothek zur Darstellung von OpenStreetMap-Offline-Karten.
+
+Licences:
+
+The library is a part of the  mapsforge project and distributed under the  LGPL3 license.
+href="http://mapsforge.org/" , href="http://www.gnu.org/licenses/lgpl.html"
+
+Map data copyright by OpenStreetMap contributors,  CC-BY-SA
+href="http://www.openstreetmap.org/
+href="http://creativecommons.org/licenses/by-sa/2.0/"

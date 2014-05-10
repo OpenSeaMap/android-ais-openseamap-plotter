@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainView"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<LinearLayout 
+        android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop ="0sp"
+		>
+		
+	
+       <org.mapsforge.android.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    
+ </LinearLayout>
+ <!--  <LinearLayout 
+        android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop ="8sp"
+		>
+		       
+    <Button android:text="TEST"
+              android:id="@+id/button8" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="14dip"
+              >
+             
+       </Button>
+       
+</LinearLayout>
+-->
+   <!--    
+    <ToggleButton 
+        android:id="@+id/snapToLocationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/snap_to_position"
+        android:textOff=""
+        android:textOn=""
+        android:visibility="gone" />
+   -->
+</LinearLayout>

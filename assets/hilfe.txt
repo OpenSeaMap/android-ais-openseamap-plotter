@@ -1,0 +1,139 @@
+AIS TCP Plotter Version 058  Build 01
+
+Copyright Victor Klein 2012-14
+
+All Rights Reserved. No part of AIS TCP Plotter may be copied, 
+reproduced or retransmitted in any material and form or by any 
+other means, without the prior written permission of the author.
+
+Disclaimer
+
+Vessel positions may be up to 15 minutes old or incomplete. 
+Data is provided for informational reasons only and is not 
+related by any means to the safety of navigation.
+
+This software depends heavily on the mapsforge library http://code.google.com/p/mapsforge/
+Thanks to the creators of this nice piece of software.
+
+Deutsch
+
+Alle Rechte vorbehalten. Kein Teil der AIS TCP Plotter app darf kopiert,
+reproduziert oder in irgend ein anderes Material uebertragen werden 
+ohne die vorherige schriftliche Zustimmumg des Authors.
+
+Erklaerung:
+
+Achtung 
+Alle Daten werden nur als Empfehlung bereitgestellt.
+Sie uebernehmen die volle Verantwortung und das Risiko fuer den Gebrauch der Empfehlungen und die Nutzung dieser Software.
+Die Daten duerfen auf keinen Fall fuer die Sicherheit der Navigation genutzt werden.
+
+Die Positionen der AIS-Targets koennen aelter als 15 min sein und unvollstaendig.
+Die Positionen der Seezeichen koennen unvollstaendig sein.
+Die Daten werden nur zu Informationszwecken bereitgestellt. 
+
+
+Bedienungsanleitung
+
+Der AISOSEAMPlotter wertet NMEA-Datensaetze aus, die von einem Telnet-Server oder gpsd-Server zur Verfuegung gestellt werden.
+Diese Daten werden auf einer Open-Maps Karte oder anderen Karten dargestellt. 
+Es ist somit ein permanenter Internetzugriff notwendig, damit die App die OpenMaps-Karten laden und aktualisieren kann.
+
+
+Offline-OpenSeaMap-Karten mit Seezeichen stehen unter osm.franken.de/offline-maps fuer einige Regionen zur Verfuegung. 
+Der Download muss mit Firefox erfolgen, andere Browser arbeiten moeglicherweise beim Download dieser Daten nicht korrekt, indem sie z.B die Dateiendung aendern.
+Dann werden die Seezeichen nicht dargestellt.
+
+Der Plotter kann auch mapsforge offline Karten der Version 0.3.0 darstellen. 
+Das sind keine Seekarten, sondern vektorisierte Openstreetmap-Karten.
+Diese Karten stehen unter www.mapsforge.org/download zur Verfuegung und muessen vorher ueber einen PC in ein beliebiges Verzeichnis auf der SD-Karte geschrieben werden.
+
+
+Erst bei erfolgreicher Konfiguration der app auf die Daten des Servers ist eine Anzeige moeglich.
+Die eigenen Positionsdaten koennen entweder vom AIS-Server als NMEA-Datensaetze mit uebertragen werden oder es wird auf das interne GPS des Android-Geraetes zugegriffen.
+Das Einstellungsmenu wird von der Startseite aus mit der Menuetaste aufgerufen.
+Es sollte eine Anfangsposition vorgeben werden.
+
+Einrichten
+
+Unter Einstellungen --> Serververbindung --> Server URL ist die Adresse des Servers in der Form xxx.xxx.xxx.xxx (z.B. 192.168.1.11) einzutragen.
+Unter Einstellungen --> Serververbindung --> Port ist der TCP-Port einzutragen (z.B. 9999, fuer gpsd 2947).
+Unter Einstellungen --> AIS-Einstellungen --> GPS-Quelle festlegen (aus, internes GPS , externes GPS)
+Unter Einstellungen --> Einstellungen --> Position LAT (N/S)  eine ungefaehre eigene Position angeben (z.B. 52' 55,672 N)
+Unter Einstellungen --> Einstellungen --> Position LON (W/E)  eine ungefaehre eigene Position angeben (z.B. 05' 24,345 E)
+
+Es erscheint eine Benachrichtigung "AIS laeuft", sonst ein durchgestrichenes Symbol.
+Mit dem Data Monitor koennen die laufenden Aktionen beobachtet werden. Je nach Uebertragungsdichte erfolgen die einzelnen Meldungen schnell.
+Schaltet man das Protokoll aus, so kann man die letzten erfolgten Aktionen ausfuehrlich analysieren.
+
+AIS-Plotter
+
+Sind AIS-Daten vorhanden so kann der AIS-Plotter gestartet werden.
+Die Daten werden auf der OpsenSeaMap-Karte oder der Strassenkarte dargestellt.
+Sind eigene GPS-Koordinaten bekannt, so zentriert "Zeige Karte zum Schiff zentriert" die Karte zum eigenen Standort.
+
+Die AIS-Ziele werden durch verschiedene farbige Symbole (5-Ecke) dargestellt.
+Die Farben haengen von der verwendeten Karte ab.
+
+ausgefuelltes blaues Vieleck:        	Positionsinfo und Schiffsinfo bekannt
+nicht ausgefuelltes blaues Vieleck:  	nur Positionsinfo bekannt
+Vieleck Rot:                 			innerhalb des Warnradius
+Vieleck tuerkis:              			Ziel festgemacht (moored)
+gruenes Vieleck:						eigene Position 						
+gruenes Rechteck:						Basisstation
+
+Die Symbole koennen angetippt werden. Die verfuegbaren Infomationen werden in einem Dialog angezeigt. 
+
+
+Menue --> Zeige Objektliste:  zeigt die AIS-Objekte nach MMSI-Nummern geordnet.
+
+Jede Aktualisierung eines AIS-Ziels setzt einen Zeitstempel.
+Die automatische Aktualisierung der Datenbank erfolgt jeweils nach 6 Minuten. Da ein bewegtes AIS-Ziel alle drei Minuten eine Aktualisierung sendet, werden AIS-Ziele deren Zeitstempel aelter als 6 Minuten ist fuer inaktiv erklaert.
+Ein inaktives Objekt wird durchgestrichen dargestellt. Nach weiteren 6 Minuten ohne Aktualisierung wird das Objekt auss der Datenbamk entfernt.
+Diesen Prozess kann man auch selbst ausloesen.
+Die AIS-Ziele werden in einer internen Datenbank gehalten, die auch nach Beendigung der App erhalten bleibt und beim naechsten Start wieder zur Verfuegungs steht.
+
+
+
+
+Menue --> Zeige Karte zum Schiff zentriert: Zentriert die Karte auf das eigene Schiff sofern eine GPS-Position bekannt ist.
+Menue --> Karte waehlen: Ist die offline-Karte aktiv, so kann eine andere offline-Karte ausgewaehlt werden.
+Menue --> Zeige Spurliste: Zeigt eine Liste mit allen aktuell aufgezeichneten Spuren von AIS-Zielen.
+Menue --> Zeige Objektliste: zeigt eine Liste aller bebekannten AIS-Ziele.
+
+Es gibt eine aktuelle Route, die in der App automatisch verwaltet wird.
+Menue --> Route zeigt Untermenue
+Menue --> Route --> Route als Text zeigen: Zeigt die Routendaten als Text an
+Menue --> Route --> Zeige Route ohne Wegepunkte: Die Symbole der Wegepunkte werden nicht angezeigt
+Menue --> Route --> neue Route: Loescht die aktuelle Route und legt eine leere Route an
+Menue --> Route --> Route bearbeiten: Die aktuaelle Route kann bearbeitet werden. Es erscheinen vier Buttons
+                    und das Zentrum der Karte mit eiem roten Kreis 
+                     add RP : das Kartenzentrum als neuen Routenpunkt hinzufuegen
+                     del RP : den letzen Routenpunkt loeschen
+                     finish Rt : Das Bearbeiten abschliessen , der Kreis und die Buttons verschwinden wieder
+                     Save Rt: Die aktuelle Route extern auf der SD-Karte speichern. Dazu kann ein Verzeichnis und ein Name gewaehlt werden.
+Menue --> Route --> Route loeschen: Loescht alle Routenpunkte aus der aktuellen Route.
+Menue --> Route --> Route  speichern: Die aktuelle Route extern auf der SD-Karte speichern. Dazu kann ein Verzeichnis und ein Name gewaehlt werden.
+Menue --> Route --> trace Route: Dient zum vorherigenn Laden aller Kacheln einer Karte in einen Cache an einem Ort mit Internetzugang.
+                    Die Route wird automatisch schrittweise mit der eingestellten Zoomstufe abgefahren. 
+                    Dabei werden alle Tiles in einen Cache geschrieben.
+                    Es ist empfehlenswert, diesen Vorgang mit den gewuenschten Zoomstufen zu wiederholen, da so diese Tiles spaeter vorhanden sind.
+                    Der Prozess dauert bei hohen Zoomstufen laenger, kann aber auf der Karte aktuell beobachtet werden. 
+                    Dabei werden Punkte zwischen den Routenpunkten berechnet.
+                    Wichtig: Es werden groessere Datenmengen ( 100-200Mb fuer einige tausend Kacheln) erzeugt.    
+Menue --> mehr --> Deaktiviere Objekte aelter als: Alle 6 Minuten werden aeltere AIS-Ziele deaktiviert. Das bedeutet, dass diese durchgestrichen dargestellt werden,
+die Informationen bleiben aber erhalten.
+Menue --> mehr --> Loesche Objekte aelter als:  Alle 6 Minuten werden deaktivierte aeltere Objekte loescht und alle Informationen ueber diese Ziel geloescht.                   
+Menue --> mehr --> Zeige Protokoll: Zeigt in einem eigenen Fenster die mitprotokollierten Ereignisse an
+Menue --> mehr --> Screenshotder Karte: Ein Screenshot der augenblicklichen Karte ohne die Seezeichen wird angefertigt und unter /mnt/sdcard/pictures/mapscreenshot_xyz.png abgelegt.                    
+                     
+
+Spuren: (Tracks)
+
+Jedes AIS-Objekt kann eine Spur haben. Diese wird in einer separaten Tabelle gehalten.
+Spuren werden im .gpx-Format gespeichert.
+Google-Earth kann diese Tracks lesen und darstellen
+
+
+
+

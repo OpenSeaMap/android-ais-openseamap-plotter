@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <org.mapsforge.android.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <ToggleButton
+        android:id="@+id/snapToLocationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/snap_to_position"
+        android:textOff=""
+        android:textOn=""
+        android:visibility="gone" />
+    <Button 
+        android:id="@+id/route_pointadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="240dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/menu_route_add">
+     
+    </Button>
+    
+    <Button 
+        android:id="@+id/route_pointdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="160dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/menu_route_delete">
+     
+    </Button>
+    
+    <Button 
+        android:id="@+id/route_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="80dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/menu_route_finish">
+     
+    </Button>
+    
+        
+    <Button 
+        android:id="@+id/route_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/menu_route_save">
+     
+    </Button>
+    
+     <Button 
+        android:id="@+id/route_trace_break"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="40dip"
+        android:layout_marginBottom="40dip"
+        android:text="@string/trace_route_stop">
+     
+    </Button>
+    
+    <ProgressBar android:id="@+id/progress_horizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="240dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:max="100"
+        android:progress="0"
+        android:secondaryProgress="100" />
+
+</RelativeLayout>

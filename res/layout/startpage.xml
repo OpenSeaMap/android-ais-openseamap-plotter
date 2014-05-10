@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+			android:id="@+id/info_text"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:padding="5dp"
+			android:textSize="20sp"
+			android:background="@color/background_info_screen"
+			android:textColor="@color/textcolor_info_screen"
+			>
+		</TextView>
+		
+	 <Button android:text="@string/confirmbutton"
+              android:id="@+id/comfirmButton" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="14dip"
+              android:layout_gravity="center_horizontal|top">
+              
+       </Button>	
+   <!--    
+    <ImageView  
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+    
+        android:scaleType="center"
+        android:src="@drawable/aismapplotter" />
+  -->  
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal|left|bottom">   
+     <Button android:text="@string/startbutton"
+              android:id="@+id/startButton" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="12dip"
+              >
+              
+       </Button>
+       <Button android:text="Data Monitor"
+              android:id="@+id/monitoring" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="12dip"
+              >
+              >
+              
+       </Button>
+       <Button android:text="@string/finishbutton"
+              android:id="@+id/finishButton" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="12dip"
+              >
+              
+       </Button>
+        
+  <LinearLayout 
+        android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop ="8sp"
+		>
+		   
+		
+    <!--    
+       <Button android:text="List"
+              android:id="@+id/button4" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="14dip"
+              >
+             
+       </Button>
+        
+         
+         <Button android:text="testwifi"
+              android:id="@+id/buttontest" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="14dip"
+              >
+             
+       </Button>
+         
+     -->   
+        <Button android:text="Start TCP Service"
+              android:id="@+id/startservice" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="14dip"
+              >
+              
+       </Button>
+       <Button android:text="Stop TCP Service"
+              android:id="@+id/stopservice" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="14dip"
+              >
+              
+       </Button>
+       
+        
+        </LinearLayout>
+        
+	 </LinearLayout>
+</LinearLayout>

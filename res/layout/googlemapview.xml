@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView 
+	    android:id="@+id/location" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:textSize="12sp"
+	    android:text="no Data"
+    />
+<com.google.android.maps.MapView 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/map" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:clickable="true" 
+    android:apiKey="0GtjrwcNbz0ZEGwCz1b_SMhEPVWnf6G41mbZpIA" 
+/>
+  <!-- beachte je nach Entwicklungsrechner!!! in mapview.xml map key anpassen
+ *      map key mac mini nur bis 12_01_05!!!  0GtjrwcNbz0ZYXFe5ArA2Neo1UYDm6CWta6OGeQ 
+ *     beachte neuer debug und map key auf macMini ab 12_01_06 0GtjrwcNbz0ZEGwCz1b_SMhEPVWnf6G41mbZpIA
+ *     beachte Release key 12_01_07 , da map key  0GtjrwcNbz0YxFS2YfngrXydSG8tS2N2wQEC9kA
+ *     map key dell netbook  0GtjrwcNbz0bGtGSCpODRF9qqEH1DExDgBeIqZQ 
+ *     -->
+</LinearLayout>

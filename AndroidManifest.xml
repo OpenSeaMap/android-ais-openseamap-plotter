@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- important
+    on a Tablet we have no gps nor bluetooth, so we disable the permissions
+  -->
+  
+  <!-- for google before <activity> insert <uses-library android:name="com.google.android.maps" />
+    --> 
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.klein.aistcpopenmapplotter051" android:versionName="058" android:versionCode="058">
+      <uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+      <uses-permission android:name="android.permission.INTERNET" />
+      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+      <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+      <uses-permission android:name="android.permission.WAKE_LOCK" />
+      <uses-sdk android:minSdkVersion="7" />
+    <application 
+       android:icon="@drawable/iconmapais" 
+       android:label="@string/app_name" 
+       android:debuggable="true">
+   
+        <activity android:name="StartPage"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.klein.activities.EinstellungenBearbeitenActivity"></activity>
+        <activity android:name="AISTCPOpenMapPlotter" ></activity>
+        <activity android:name="SetParams" ></activity>
+        <activity android:name="com.klein.activities.TargetEditActivity" ></activity>
+        <activity android:name="com.klein.activities.AISListActivity" ></activity>
+        <activity android:name="com.klein.activities.DeviceListActivity"
+                  android:label="@string/select_device"
+                  android:theme="@android:style/Theme.Dialog"
+                  android:configChanges="orientation|keyboardHidden" />
+                  
+        <activity android:name="com.klein.activities.MonitoringActivity" 
+    			  android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.klein.activities.ReadAssetActivity"></activity>
+        <activity android:name="com.klein.activities.FilePicker" />
+        <activity android:name="com.klein.activities.TrackListActivity" />
+        <activity android:name="com.klein.activities.TrackTextActivity" />
+        <activity android:name="com.klein.activities.RouteTextActivity" />
+       
+        
+        <service android:name="GpsLocationServiceLocal" />
+        <service android:name="com.klein.service.TCPNetzwerkService" />
+    </application>
+    
+
+
+
+
+</manifest> 

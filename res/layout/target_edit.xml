@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+  
+	
+    <LinearLayout 
+        android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop ="8sp"
+		>
+	<TextView 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:textSize="20sp"
+		android:layout_weight="1"
+		android:text="@string/name" />
+	<TextView 
+	    android:id="@+id/name" 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:text ="xxxxxxxxxxx"
+		android:layout_weight="2"
+		 />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop ="8sp"
+		>
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textSize="20sp"
+			android:layout_weight="1"
+			android:text="@string/mmsi" />
+		<TextView android:id="@+id/mmsi" 
+		  android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20sp" 
+			android:text ="123456789"
+			android:layout_weight="2"/>
+	</LinearLayout>
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop ="8sp"
+		>
+	<TextView 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:textSize="20sp"
+		android:layout_weight="1"
+		android:text="@string/lat" />
+	<TextView 
+	    android:id="@+id/lat" 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:layout_weight="2"
+		 />
+	</LinearLayout>
+	<LinearLayout 
+        android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop ="8sp"
+		>
+    <TextView 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:textSize="20sp"
+		android:layout_weight="1"
+		android:text="@string/lon" />
+	<TextView 
+	    android:id="@+id/lon" 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:layout_weight="2"
+		 />
+	</LinearLayout>
+	<LinearLayout 
+        android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop ="8sp"
+		>	 
+    <TextView 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:textSize="20sp"
+		android:layout_weight="1"
+		android:text="@string/sog" />
+	<TextView 
+	    android:id="@+id/sog" 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:layout_weight="2"
+		 />
+    </LinearLayout>L
+    <LinearLayout 
+        android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop ="8sp"
+		>
+	<TextView 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:layout_weight="1"
+		android:text="@string/cog" />
+	<TextView 
+	    android:id="@+id/cog" 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:layout_weight="2"
+		 />
+	</LinearLayout>
+	<LinearLayout 
+        android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop ="8sp"
+		>
+	<TextView 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="14sp"
+		android:layout_weight="1"
+		android:text="@string/navstatus" />
+	<TextView 
+	    android:id="@+id/navstatus" 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="14sp"
+		android:layout_weight="2"
+		 />
+	</LinearLayout>
+	<LinearLayout 
+        android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop ="8sp"
+		>
+	<TextView 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="14sp"
+		android:layout_weight="1"
+		android:text="@string/shiptype" />
+	<TextView 
+	    android:id="@+id/shiptype" 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="14sp"
+		android:layout_weight="2"
+		 />
+	</LinearLayout>
+	<LinearLayout 
+        android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop ="8sp"
+		>
+	<TextView 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:layout_weight="1"
+		android:text="@string/utc" />
+	<TextView 
+	    android:id="@+id/utc" 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:layout_weight="2"
+		 />
+	</LinearLayout>
+	<LinearLayout 
+        android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop ="8sp"
+		>
+	<CheckBox
+	    android:id="@+id/hastrack"
+	    android:text="@string/hasTrack"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_marginTop ="20sp"
+		android:layout_marginRight="10sp"
+	    />		
+	<Button android:id="@+id/showOnMap" 
+	  android:text="@string/showOnMap"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_marginTop ="20sp"/>
+		
+	<Button android:id="@+id/confirm" 
+	  android:text="@string/back"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_marginTop ="20sp"/>
+	</LinearLayout>
+</LinearLayout>

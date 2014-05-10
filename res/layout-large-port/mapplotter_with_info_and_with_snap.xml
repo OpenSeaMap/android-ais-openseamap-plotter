@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ <LinearLayout 
+       android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		>
+  <!-- top area -->
+  <LinearLayout 
+        android:layout_width="wrap_content"
+		android:layout_height="@dimen/data_layout_port_7_height"
+		android:background="@color/background_info_screen"
+		android:orientation="horizontal">
+	   <LinearLayout 
+       android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		>
+		 <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/OSM_Info_Head"
+	        android:text="Snap Map"
+	        android:textColor="@color/textcolor_info_screen"
+	        android:background="@color/background_info_screen"
+	        android:textSize="@dimen/data_port_7_text_label_size"
+	        /> 
+       
+		  <ToggleButton
+	        android:id="@+id/snapToLocationView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/snap_to_position"
+	        android:layout_marginLeft="10dip"
+	        android:textOff=""
+	        android:textOn=""
+	        android:visibility="gone" >
+         </ToggleButton>
+         
+		
+    
+		</LinearLayout>
+        <TextView
+        android:layout_width="@dimen/data_divider_port_7_width"
+        android:layout_height="@dimen/data_layout_port_7_height"
+        android:id="@+id/OSM_Info_Divider1"
+        android:padding="@dimen/padding_large"
+        android:text="| | | | "
+        android:textColor="@color/textcolor_data_screen"
+        android:background="@color/background_data_screen"
+        android:textSize="@dimen/data_divider_size"
+        />
+        <LinearLayout 
+       android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		>
+		     <TextView
+	        android:layout_width="@dimen/data_label_and_value_port_7_width"
+	        android:layout_height="@dimen/data_label_port_7_height"
+	        android:id="@+id/OSM_Info_LAT_Label"
+	        android:padding="@dimen/padding_medium"
+	        android:text="LAT °"
+	        android:textColor="@color/textcolor_info_screen"
+	        android:background="@color/background_info_screen"
+	        android:textSize="@dimen/data_lat_lon_text_size"
+	        /> 
+	         <TextView
+	         android:layout_width="@dimen/data_label_and_value_port_7_width"
+	        android:layout_height="@dimen/data_value_port_7_heigth"
+	        android:id="@+id/OSM_Info_LAT"
+	        android:padding="@dimen/padding_medium"
+	        android:text="---"
+	        android:textColor="@color/textcolor_info_screen"
+	        android:background="@color/background_info_screen"
+	        android:textSize="@dimen/data_lat_lon_text_size"
+	        /> 
+        </LinearLayout>
+        
+         <TextView
+        android:layout_width="@dimen/data_divider_port_7_width"
+        android:layout_height="@dimen/data_layout_port_7_height"
+        android:id="@+id/OSM_Info_Divider2"
+        android:padding="@dimen/padding_large"
+        android:text="| | | | "
+        android:textColor="@color/textcolor_data_screen"
+        android:background="@color/background_data_screen"
+        android:textSize="@dimen/data_divider_size"
+        />
+         
+       <LinearLayout 
+          android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:orientation="vertical"
+		>
+		    <TextView
+	        android:layout_width="@dimen/data_label_and_value_port_7_width"
+	       android:layout_height="@dimen/data_label_port_7_height"
+	        android:id="@+id/OSM_Info_LON_Label"
+	        android:padding="@dimen/padding_medium"
+	        android:text="LON °"
+	        android:textColor="@color/textcolor_info_screen"
+	        android:background="@color/background_info_screen"
+	        android:textSize="@dimen/data_lat_lon_text_size"
+	        /> 
+         
+	        <TextView
+	        android:layout_width="@dimen/data_label_and_value_port_7_width"
+	        android:layout_height="@dimen/data_value_port_7_heigth"
+	        android:id="@+id/OSM_Info_LON"
+	        android:padding="@dimen/padding_medium"
+	        android:text="---"
+	        android:textColor="@color/textcolor_info_screen"
+	        android:background="@color/background_info_screen"
+	        android:textSize="@dimen/data_lat_lon_text_size"
+	        />
+         </LinearLayout> 
+         
+	       <TextView
+	        android:layout_width="@dimen/data_divider_port_7_width"
+	        android:layout_height="@dimen/data_layout_port_7_height"
+	        android:id="@+id/OSM_Info_Divider3"
+	        android:padding="@dimen/padding_large"
+	        android:text="| | | | "
+	        android:textColor="@color/textcolor_data_screen"
+	        android:background="@color/background_data_screen"
+	        android:textSize="@dimen/data_divider_size"
+	        /> 
+	        
+        <LinearLayout 
+          android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:orientation="vertical"
+		>
+
+            <TextView
+                 android:layout_width="@dimen/data_label_and_value_port_7_width"
+	            android:layout_height="@dimen/data_label_port_7_height"
+                android:background="@color/background_info_screen"
+                android:padding="@dimen/padding_medium"
+                android:text="WIND kt"
+                android:textColor="@color/textcolor_info_screen"
+                android:textSize="@dimen/data_port_7_text_label_size" />
+         
+	        <TextView
+	         android:layout_width="@dimen/data_label_and_value_port_7_width"
+	        android:layout_height="@dimen/data_value_port_7_heigth"
+	        android:id="@+id/OSM_Info_Windspeed"
+	        android:padding="@dimen/padding_medium"
+	        android:text="---"
+	        android:textColor="@color/textcolor_info_screen"
+	        android:background="@color/background_info_screen"
+	        android:textSize="@dimen/data_port_7_text_size"
+	        android:textStyle="bold"
+	        android:gravity="right"
+	        /> 
+        
+        </LinearLayout>
+        
+	       <TextView
+	         android:layout_width="@dimen/data_divider_port_7_width"
+	        android:layout_height="@dimen/data_layout_port_7_height"
+	        android:id="@+id/OSM_Info_Divider4"
+	        android:padding="@dimen/padding_large"
+	        android:text="| | | | "
+	        android:textColor="@color/textcolor_data_screen"
+	        android:background="@color/background_data_screen"
+	        android:textSize="@dimen/data_divider_size"
+	        /> 
+        
+        <LinearLayout 
+          android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:orientation="vertical"
+		>
+		     <TextView
+	         android:layout_width="@dimen/data_label_and_value_port_7_width"
+	       android:layout_height="@dimen/data_label_port_7_height"
+	        android:id="@+id/OSM_Info_Windangle_Label"
+	        android:padding="@dimen/padding_medium"
+	        android:text="ANGLE R°"
+	        android:textColor="@color/textcolor_info_screen"
+	        android:background="@color/background_info_screen"
+	        android:textSize="@dimen/data_port_7_text_label_size"
+	        /> 
+		      <TextView
+	        android:layout_width="@dimen/data_label_and_value_port_7_width"
+	         android:layout_height="@dimen/data_value_port_7_heigth"
+	        android:id="@+id/OSM_Info_Winddirection"
+	        android:padding="@dimen/padding_medium"
+	        android:text="---"
+	        android:textColor="@color/textcolor_info_screen"
+	        android:background="@color/background_info_screen"
+	        android:textSize="@dimen/data_port_7_text_size"
+	        android:textStyle="bold"
+	        android:gravity="right"
+	        /> 
+        </LinearLayout>
+        
+	       <TextView
+	        android:layout_width="@dimen/data_divider_port_7_width"
+	        android:layout_height="@dimen/data_layout_port_7_height"
+	        android:id="@+id/OSM_Info_Divider5"
+	        android:padding="@dimen/padding_large"
+	        android:text="| | | | "
+	        android:textColor="@color/textcolor_data_screen"
+	        android:background="@color/background_data_screen"
+	        android:textSize="@dimen/data_divider_size"
+	        /> 
+	         
+        <LinearLayout 
+          android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:orientation="vertical"
+		>
+		     <TextView
+	         android:layout_width="@dimen/data_label_and_value_port_7_width"
+	        android:layout_height="@dimen/data_label_port_7_height"
+	        android:id="@+id/OSM_Info_Depth_Label"
+	        android:padding="@dimen/padding_medium"
+	        android:text="DEPTH m"
+	        android:textColor="@color/textcolor_info_screen"
+	        android:background="@color/background_info_screen"
+	        android:textSize="@dimen/data_port_7_text_label_size"
+	        /> 
+	        <TextView
+	        android:layout_width="@dimen/data_label_and_value_port_7_width"
+	        android:layout_height="@dimen/data_value_port_7_heigth"
+	        android:id="@+id/OSM_Info_Depth"
+	        android:padding="@dimen/padding_medium"
+	        android:text="---"
+	        android:textColor="@color/textcolor_info_screen"
+	        android:background="@color/background_info_screen"
+	        android:textSize="@dimen/data_port_7_text_size"
+	        android:textStyle="bold"
+	        android:gravity="right"
+	        /> 
+        
+        </LinearLayout>
+        
+	        <TextView
+	        android:layout_width="@dimen/data_divider_port_7_width"
+	        android:layout_height="@dimen/data_layout_port_7_height"
+	        android:id="@+id/OSM_Info_Divider6"
+	        android:padding="@dimen/padding_large"
+	        android:text="| | | | "
+	        android:textColor="@color/textcolor_data_screen"
+	        android:background="@color/background_data_screen"
+	        android:textSize="@dimen/data_divider_size"
+	        /> 
+        <LinearLayout 
+          android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:orientation="vertical"
+		>
+		    <TextView
+	         android:layout_width="@dimen/data_label_and_value_port_7_width"
+	        android:layout_height="@dimen/data_label_port_7_height"
+	        android:id="@+id/OSM_Info_SOG_Label"
+	        android:padding="@dimen/padding_medium"
+	        android:text="SOG kt"
+	        android:textColor="@color/textcolor_info_screen"
+	        android:background="@color/background_info_screen"
+	        android:textSize="@dimen/data_port_7_text_label_size"
+	        /> 
+	        <TextView
+	         android:layout_width="@dimen/data_label_and_value_port_7_width"
+	        android:layout_height="@dimen/data_value_port_7_heigth"
+	        android:id="@+id/OSM_Info_SOG"
+	        android:padding="@dimen/padding_medium"
+	        android:text="---"
+	        android:textColor="@color/textcolor_info_screen"
+	        android:background="@color/background_info_screen"
+	        android:textSize="@dimen/data_port_7_text_size"
+	        android:textStyle="bold"
+	        android:gravity="right"
+	        /> 
+        </LinearLayout>
+	       <TextView
+	         android:layout_width="@dimen/data_divider_port_7_width"
+	        android:layout_height="@dimen/data_divider_port_height"
+	        android:id="@+id/OSM_Info_Divider7"
+	        android:padding="@dimen/padding_large"
+	        android:text="| | | | "
+	        android:textColor="@color/textcolor_data_screen"
+	        android:background="@color/background_data_screen"
+	        android:textSize="@dimen/data_divider_size"
+	        /> 
+      <LinearLayout 
+          android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:orientation="vertical"
+		>
+		    <TextView
+	        android:layout_width="@dimen/data_label_and_value_port_7_width"
+	       android:layout_height="@dimen/data_label_port_7_height"
+	        android:id="@+id/OSM_Info_COG_Label"
+	        android:padding="@dimen/padding_medium"
+	        android:text="COG T°"
+	        android:textColor="@color/textcolor_info_screen"
+	        android:background="@color/background_info_screen"
+	        android:textSize="@dimen/data_port_7_text_label_size"
+	        /> 
+	        <TextView
+	        android:layout_width="@dimen/data_label_and_value_port_7_width"
+	         android:layout_height="@dimen/data_value_port_7_heigth"
+	        android:id="@+id/OSM_Info_COG"
+	        android:padding="@dimen/padding_medium"
+	        android:text="---"
+	        android:textColor="@color/textcolor_info_screen"
+	        android:background="@color/background_info_screen"
+	        android:textSize="@dimen/data_port_7_text_size"
+	        android:textStyle="bold"
+	        android:gravity="right"
+	        /> 
+        </LinearLayout>
+        
+      <TextView
+	        android:layout_width="@dimen/data_divider_port_7_width"
+	        android:layout_height="@dimen/data_divider_port_height"
+	        android:id="@+id/OSM_Info_Divider8"
+	        android:padding="@dimen/padding_large"
+	        android:text="| | | | "
+	        android:textColor="@color/textcolor_data_screen"
+	        android:background="@color/background_data_screen"
+	        android:textSize="@dimen/data_divider_size"
+	        /> 
+	  </LinearLayout>
+	  
+	<!-- route buttons and progress bar -->        
+	   <LinearLayout 
+          android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:orientation="horizontal"
+		>
+		   
+				<Button 
+			        android:id="@+id/route_pointadd"
+			        android:layout_width="70dp"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dip"
+			        android:text="@string/menu_route_add"> 
+		        </Button>
+		        <Button 
+			        android:id="@+id/route_pointdelete"
+			        android:layout_width="70dp"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dip"
+			        android:text="@string/menu_route_delete">
+			    </Button>
+			
+				<Button 
+			        android:id="@+id/route_finish"
+			        android:layout_width="70dp"
+			        android:layout_height="wrap_content"
+			        
+			        android:layout_marginLeft="10dip"
+			        android:text="@string/menu_route_finish">
+	            </Button>
+	            
+			    <Button 
+	              android:id="@+id/route_save"
+	              android:layout_width="70dp"
+	              android:layout_height="wrap_content"
+	              android:layout_marginLeft="10dip"
+	              android:text="@string/menu_route_save">
+	            </Button>   
+			
+	       <Button 
+            android:id="@+id/route_trace_break"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/trace_route_stop">
+          </Button>  
+          
+	        <ProgressBar android:id="@+id/progress_horizontal"
+	        style="?android:attr/progressBarStyleHorizontal"
+	        android:layout_width="240dip"
+	        android:layout_height="30dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="20dip"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="10dip"
+	        android:max="100"
+	        android:progress="0"
+	        android:secondaryProgress="100" />
+	    </LinearLayout>     
+      
+       
+ 
+   
+ 
+    <!-- map and progress bar -->
+     <LinearLayout 
+      android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+    
+     <org.mapsforge.android.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+     
+    
+    
+     </LinearLayout>
+   </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/layout1"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <TextView  android:id="@+id/mmsi" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:textSize="20sp"
+    android:text="123456789"/>
+  <TextView android:id="@+id/name" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:textSize="20sp"
+    android:text ="xxxxxxxx"/>
+   
+   <TextView android:id="@+id/sog" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/layout1"
+    android:textSize="20sp"
+    android:padding="5dp"
+    android:text ="000"/>
+  <!-- 
+  <CheckBox android:text="@string/showactive" 
+    android:id="@+id/CheckBox01" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content">
+   </CheckBox>
+   -->
+</LinearLayout>

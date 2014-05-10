@@ -1,0 +1,100 @@
+AIS TCP Plotter Version 058 Build 01 not used for information
+
+Copyright Victor Klein 2012-2014
+
+All Rights Reserved. No part of AIS TCP Plotter may be copied, 
+reproduced or retransmitted in any material and form or by any 
+other means, without the prior written permission of the author.
+
+Disclaimer
+
+Vessel positions may be up to 15 minutes old or incomplete. 
+Data is provided for informational reasons only and is not 
+related by any means to the safety of navigation.
+
+
+Deutsch
+
+Alle Rechte vorbehalte. Kein Teil der AIS TCP Plotter App darf kopiert,
+reproduziert oder in irgend ein anderes Material uebertragen werden 
+ohne die vorherige schriftliche Zustimmumg des Authors
+
+Erklaerung:
+
+Achtung 
+Alle Daten werden nur als Empfehlung bereitgestellt.
+Sie uebernehmen die volle Verantwortung und das Risiko für den Gebrauch der Empfehlungen und die Nutzung dieser Software.
+Die Daten duerfen auf keinen Fall fuer die Sicherheit der Navigation genutzt werden.
+
+Die Positionen der AIS-Targets koennen aelter als 15 min sein und unvollstaendig.
+
+Die Daten werden nur zu Informationszwecken bereitgestellt. 
+
+
+Bedienungsanleitung
+
+Der AIS TCP Plotter wertet NMEA-Datensaetze aus, die von einem Telnet-Server zur Verfuegung gestellt werden.
+Diese Daten werden auf einer Google-Maps Karte dargestellt. 
+Es ist somit ein permanenter Internetzugriff notwendig, damit Google-Maps die Karten laden und aktualisieren kann.
+
+
+Erst bei erfolgreicher Konfiguration der app auf die Daten des Servers ist eine Anzeige moeglich.
+Die eigenen Positionsdaten koennen entweder vom AIS-Server als NMEA-Datensaetze mit uebertragen werden oder es wird auf das interne GPS des Android-Geraetes zugegriffen.
+Das Einstellungsmenu wird von der Startseite aus mit der Menuetaste aufgerufen.
+Es sollte eine Anfangs
+
+Einrichten
+
+Unter Einstellungen --> Serververbindung --> Server URL ist die Adresse des Servers in der Form xxx.xxx.xxx.xxx (z.B. 192.168.1.11) einzutragen.
+Unter Einstellungen --> Serververbindung --> Port ist der TCP-Port einzutragen (z.B. 9999).
+Unter Einstellungen --> AIS-Einstellungen --> GPS-Quelle festlegen (aus, internes GPS , externes GPS)
+Unter Einstellungen --> Einstellungen --> Position LAT (N/S)  eine ungefaehre eigene Position angeben (z.B. 52' 55,672 N)
+Unter Einstellungen --> Einstellungen --> Position LON (W/E)  eine ungefaehre eigene Position angeben (z.B. 05' 24,345 E)
+
+Es erscheint eine Benachrichtigung "AIS laeuft", sonst ein durchgestrichenes Symbol.
+Mit dem Data Monitor koennen die laufenden Aktionen beobachtet werden. Je nach Uebertragungsdichte erfolgen die einzelnen Meldungen schnell.
+Schaltet man das Protokoll aus, so kann man die letzten erfolgten Aktionen ausfuehrlich analysieren.
+
+AIS-Plotter
+
+Sind AIS-Daten vorhanden so kann der AIS-Plotter gestartet werden.
+Der Plotter startet beim ersten Mal mit der Online-Mapnik-Karte.
+Weitere Onlinekarten sind möglich. Einstellungen-->
+Die Daten werden auf der Strassenkarte dargestellt.
+Sind eigene GPS-Koordinaten bekannt, so zentriert "Zeige Karte zum Schiff zentriert" die Karte zum eigenen Standort.
+
+Die AIS-Ziele werden durch verschiedene farbige Symbole (Polygon) dargestellt.
+Die Farben haengen von der verwendten Karte ab.
+
+ausgefuelltes Polygon:        Positionsinfo und Schiffsinfo bekannt
+nicht ausgefuelltes Polygon:  nur Positionsinfo bekannt
+
+
+Ausgefuellte Symbole koennen angetippt werden. Die verfuegbaren Infomationen werden angezeigt. 
+
+Menue --> Zeige Objektliste:  zeigt die AIS-Objekte nach MMSI-Nummern geordnet.
+
+
+Jede Aktualisierung eines AIS-Ziels setzt einen Zeitstempel.
+Die automatische Aktualisierung der Datenbank erfolgt jeweils nach 6 Minuten. Da ein bewegtes AIS-Ziel alle drei Minuten eine Aktualisierung sendet, werden AIS-Ziele deren Zeitstempel aelter als 6 Minuten ist fuer inaktiv erklaert.
+Ein inaktives Objekt wird durchgestrichen dargestellt. Nach weiteren 6 Minuten ohne Aktualisierung wird das Objekt auss der Datenbamk entfernt.
+Diesen Prozess kann man auch selbst ausloesen.
+
+Menue --> mehr--> Loesche Objekte aelter als:  Zeigt eine Zeitauswahl, die aeltere Objekte loescht (Voreinstellung 15 min vor aktueller Zeit).
+Menue --> mehr --> Deaktiviere Objekte aelter als: Zeigt eine Zeitauswahl, die aeltere Objekte deaktiviert. Das bedeutet, dass diese durchgestrichen dargestellt werden,
+die Informationen bleiben aber erhalten.
+
+Routen:
+
+Es kann eine Route erstellt, gespeichert und geladen werden. Routen werden im .gpx-Format abgelegt.
+Routen können über ihren Dateinamen unterschieden werden.
+
+Spuren: (Tracks)
+
+Jedes AIS-Objekt kann eine Spur haben. Diese wird in einer separaten Tabelle gehalten.
+Spuren werden im .gpx-Format gespeichert.
+Google-Earth kann diese Tracks lesen und darstellen
+
+
+
+

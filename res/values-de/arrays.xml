@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <!-- Version de 12_01_07 -->
+    <string-array name="radius_texte">
+        <item>aus</item>
+        <item>0,5 sm</item>
+        <item>1 sm</item>
+        <item>1,5 sm</item>
+        <item>2 sm</item>
+        <item>5 sm</item>
+        <item>10 sm</item>
+        <item>15 sm</item>
+        <item>30 sm</item>
+        
+    </string-array>
+    <string-array name="radius_werte">
+        <item>0</item>
+        <item>0.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+       
+    </string-array>
+    
+    <string-array name="deactivate_texte">
+        <item>aus</item>
+        <item>an</item>
+    </string-array>
+    <string-array name="deactivate_werte">
+        <item>off</item>
+        <item>on</item>
+    </string-array>
+    
+    <string-array name="delete_texte">
+        <item>aus</item>
+        <item>an</item>
+    </string-array>
+    <string-array name="delete_werte">
+        <item>off</item>
+        <item>on</item>
+    </string-array>
+    
+    <string-array name="show_texte">
+        <item>aus</item>
+        <item>an</item>
+    </string-array>
+    <string-array name="show_werte">
+        <item>off</item>
+        <item>on</item>
+    </string-array>
+    
+    <string-array name="use_gps_texte">
+        <item>aus</item>
+        <item>internes GPS</item>
+        <item>externes GPS</item>
+    </string-array>
+    
+    <string-array name="use_gps_values">
+        <item>off</item>
+        <item>internal</item>
+        <item>external</item>
+    </string-array>
+    
+    <string-array name="save_position_data">
+        <item>aus</item>
+        <item>an</item>
+    </string-array>
+    <string-array name="save_position_values">
+        <item>off</item>
+        <item>on</item>
+    </string-array>
+    
+    <string-array name="routen"> 
+      <item>Neustadt -> Grömitz</item>
+      <item>Neustadt -> Burgtiefe</item>
+      <item>Bürgtiefe -> Gedser</item>
+      <item>Gedser -> Klintholm</item>
+    </string-array>     
+</resources>

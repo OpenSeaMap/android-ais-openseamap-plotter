@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+ <!-- Version 015 120315 added map generator choice -->
+ <!-- Version 030 12_05_16 added route capabilities -->
+
+ <!-- Version default 12_01_07-->
+ 
+  <!-- anwendungsweite Menueoptionen -->   
+	
+	<string name="app_Beenden"> finish App</string>
+     <string name="app_einstellungenBearbeiten">Set application settings</string>
+     <string name="app_zurueck">back</string>
+     <string name="bearbeiten_Beenden">finish settings</string>
+     
+     
+  <!-- StartPage Activity-->
+    <string name="hello">Hello World, ais map tcp plotter!</string>
+    <string name="app_name">AISOSeaMapPlotter-057</string>
+    <string name="title"> AIS OSeaM Plotter en</string>
+    <string name="no_targets">no AIS-targets available</string>
+    <string name="save_targetList">Save target list</string>
+    <string name="confirmbutton">I confirm</string>
+    <string name="startbutton">Map screen</string>
+    <string name="startbuttonsplit">Split screen</string>
+    <string name="datascreenbutton">Data screen</string>
+    
+	<string name="finishbutton">Finish</string>
+   
+   <!-- Options Menu in StartPage Activity-->
+	<string name="startpage_einstellungenAnzeigen">Settings</string>
+	<string name="startpage_exportaisdata">Export AIS-data</string> 
+    <string name="startpage_showinfo">Show application info</string>
+    <string name="startpage_pickmap">Choose map file</string>
+    <string name="startpage_restore_cache">Choose restore file</string>
+    <string name="startpage_show_logger">Show log</string>
+  <!-- TrackList Activity -->  
+  <string name="tracklist_info">Track list info</string> 
+  <string name="tracklist_no_tracks">no tracks in database</string>
+  
+   <!--  Context menu to TrackList Activity -->  
+	<string name="track_menu_delete">delete track</string>
+	<string name="track_menu_save">save track</string> 
+      
+  <!--  TargetList Activity -->      
+    <string name="showactive">show</string> 
+   
+   <!--  Context menu to TargetList Activity -->  
+	<string name="menu_delete">Delete target</string>
+	<string name="menu_show">Show target on map</string> 
+      
+  <!--  TargetEdit Activity -->  
+	<string name="mmsi">MMSI</string>
+	<string name="name">Name</string>
+	<string name="confirm">OK</string>
+	<string name ="back">back</string>
+	<string name="lat">LAT</string>
+	<string name="lon">LON</string>
+	<string name="sog">SOG</string>
+	<string name="cog">COG</string>
+	<string name="utc">UTC</string>
+	<string name="navstatus">Nav. Status</string>
+	<string name="shiptype">Type</string>
+	
+	<string name="showOnMap">Show on map</string>
+	<string name="hasTrack">Has Track</string>
+	<string name="noBlueTableInfoAvailable">no Blue table info available</string>
+	<string name="blueTableNotSet">Blue Table is not set</string>
+	<string name="blueTableIsSet">Blue Table is set</string>
+	
+	<string name="server_connected"> Connected to </string>
+	<string name="server_not_connected"> no NMEA-Server found </string>
+	
+	<string name="start">Start</string>
+	
+	
+	<!--  MapPlotter  -->
+	
+	<string name="mapplotter_exit_question">Are you sure you want to exit?</string>
+	<string name="mapplotter_exit_yes">yes</string>
+	<string name="mapplotter_exit_no">no</string>
+	<string name="aisItem_info1">received ago </string>
+	<string name ="aisItem_track_is_recorded">track is recorded</string>
+	<string name ="aisItem_track_is_not_recorded">track is not recorded</string>
+	<string name ="aisItem_record_track"> record track</string>
+	<string name ="aisItem_delete_track"> delete track</string>
+	<string name ="aisItem_save_track"> save track</string>
+	
+	<!-- guiupdate messages -->
+    <string name ="guiupdate_infoknows">knows</string>
+    <string name ="guiupdate_info_received_sec_ago">received sec ago </string>
+    <string name ="guiupdate_info_no_track_to_show">no track to show</string>
+    <string name ="guiupdate_info_track_to_show">track to show</string>
+    <string name ="guiupdate_info_new_position_for">new position info for</string>
+    <string name ="guiupdate_info_time_to_create_targets">Time to create </string>
+    <string name ="guiupdate_info_restore_track">Track points to display:</string>
+    <string name ="guiupdate_info_press_add_tp">press ADD TP to add the center of the map</string>
+    <string name ="guiupdate_info_could_not_load_data_for_default_route">Could not load data for default route</string>
+    <string name ="guiupdate_info_failed_in_parsing_route_gpx_file">Failed in parsing route gpx file</string>
+    <string name ="guiupdate_info_failed_in_parsing_track_gpx_file">Failed in parsing track gpx file</string>
+    <string name ="guiupdate_info_no_route_point_to_delete">no Route point to delete</string>
+    <string name ="guiupdate_info_error_creating_new_route_table">Error while creating new Route table</string>
+     
+    <!-- map cache handling  -->
+    <string name ="mapcache_handling_msg_Big_cache_1">Big map cache with </string>
+    <string name ="mapcache_handling_msg_Big_cache_2">files, will take a time to read </string>
+    <string name ="mapcache_handling_msg_Big_cache_3">Tile cache was deleted </string>
+    
+	<!--  Options Menu in AIS Map 012 TCP Plotter  Activity -->
+	
+	
+	<string name="show_targetList">Show target list</string>
+    <string name="show_centermap">Show Map centered to ship</string>
+	<string name="show_params">Show Properties Chooser</string>
+	<string name="delete_old_targets">Delete old targets prior to</string>
+	<string name="deactivate_old_targets">Deactivate old targets prior to</string>
+	<string name="pick_map_file">Pick map file</string>
+	<string name="showlog">Show Logger</string>
+	<string name="showtracklist">Show track list</string>
+	<string name="showspeedmarker">Show speed marker</string>
+	<string name="hidespeedmarker">hide speed marker</string>
+	<string name="showssattelitemap">Show satellite map</string>
+	<string name="hidessattelitemap">Hide satellite map</string>
+	<!--  routes added 12_05_16 -->
+    <string name="menu_route">Route</string>
+	<string name="menu_route_add">add RP</string>
+	<string name="menu_route_delete">del RP</string>
+	<string name="menu_route_finish">finish RT</string>
+	<string name="menu_route_save"> Save RT</string>
+	<string name="trace_route_stop">stop trace</string>
+	<string name="trace_route_stop_info1">trace of route points with scale </string>
+	<string name="trace_route_stop_info2">finished </string>
+	<string name="trace_route_stop_info3">finished by user</string>
+	<string name="trace_route_cannot_trace">can not trace Route while snap to own ship is on</string>
+	<string name="trace_route_run_info1">center to trace point </string>
+	<string name="trace_route_run_info2"> of </string>
+	<string name="trace_route_run_info3"> with scale </string>
+	
+	<string name="route_tap_title">Routepoint</string>
+	<string name="route_tap_info_waypoint">to next Waypoint </string>
+	<string name="route_tap_info_distance">Distance:  </string>
+	<string name="route_tap_info_course">Course: </string>
+	<string name="route_tap_info_lastwaypoint">to last Waypoint </string>
+	<string name="route_tap_info_sum_of_distance">Sum of Distance: </string>
+	
+	
+	<string name="menu_alert_dialog_route_save_filename">filename</string>
+	<string name="menu_alert_dialog_route_save_basedirectory">base directory</string>
+	<string name="menu_alert_dialog_text_entry">Save the route to</string>
+	<string name="menu_alert_dialog_ok">OK</string>
+	<string name="menu_alert_dialog_cancel">Cancel</string>
+	<string name="menu_screenshot">Screenshot</string>
+	<string name="menu_screenshot_jpeg">JPEG (lossy)</string>
+	<string name="menu_screenshot_png">PNG (lossless)</string>
+	<string name="menu_show_data_screen">Show Data</string>  
+	<string name="menu_hide_data_screen">Hide Data</string>   
+	<!--  AIS Map 012 TCP Plotter  Activity -->
+	
+	
+	<!--  disabled
+    <string name="server_address">Set the server address</string>
+    <string name="set_server_address">Please enter the address of your NMEA-server</string>
+    <string name="server_address_format_error">Address needs to be in the following format: xxx.xxx.xxx.xxx \n\ne.g. 192.168.001.001</string>
+    <string name="port">Set the Port</string>
+    <string name="set_port">Please enter the port of your NMEA server</string>
+    <string name="port_format_error">Port needs to be in the following format: xxxxxx \n\ne.g. 9999</string>
+    <string name="connect">Connect to BT Device</string>
+    <string name="resetDatabase">remove all targets from the database</string>
+	
+	<string name="alarmcircle">Set the radius of the alarm circle</string>
+	<string-array name="alarmradius_array">
+	    <item>0.5</item>
+		<item>1.0</item>
+		<item>1.5</item>
+		<item>2.0</item>
+		<item>4.0</item>
+		<item>8.0</item>
+		<item>12.0</item>
+		<item>16.0</item>
+		<item>20.0</item>
+	</string-array>
+	
+	-->
+	
+	<!-- Einstellungen bearbeiten 
+	  diese Werte werden in einstellungen.xml verarbeitet-->
+	  
+	 <string-array name="preferences_map_generator_values">
+		<item>Database renderer (offline)</item>
+		<item>Mapnik (online)</item>
+		<item>OpenStreetMap (online)</item>
+		<item>OpenSeaMap (online)</item>
+		<item>EniroMap (online)</item>
+		<item>EniroNautical(SE) (online)</item>
+		<item>EniroAerial(SE) (online)</item>
+		<item>EniroAerial with seamarks(SE) (online)</item>
+		<item>OpenCycleMap (online)</item>
+	</string-array>
+	
+	<string name= "einstellungenbearbeiten_mapfilename">Map file name</string>
+	<string name="preferences_cache_persistence">Cache persistence</string>
+	<string name="preferences_cache_persistence_desc">Keep cached images on exit</string>
+   
+	<string name="preferences_log_tcp_data">log NMEA data</string>
+	<string name="preferences_log_tcp_data_desc">log all incoming NMEA data</string> 
+	   
+    <string name="einstellungenbearbeiten_titel">Settings</string>
+    <string name="einstellungenbearbeiten_shipName">Ship name</string>
+    <string name="einstellungenbearbeiten_alarmradius">Alarm radius </string>
+    <string name="einstellungenbearbeiten_verbindungsdatenTitel">Server connection</string>
+    <string name="einstellungenbearbeiten_aisTitel">AIS-Settings</string>
+    <string name="einstellungenbearbeiten_verbindungsdatenLogin">Login</string>
+    <string name="einstellungenbearbeiten_verbindungsdatenPasswort">Password</string>
+    <string name="einstellungenbearbeiten_verbindungsdatenServer">Server URL</string>
+     <string name="einstellungenbearbeiten_verbindungsdatenServer_desc">Internet address of the  AIS/GPS-Server e.g. 192.168.1.1s</string>
+    <string name="einstellungenbearbeiten_verbindungsdatenPort">Port </string>
+    <string name="einstellungenbearbeiten_verbindungsdatenPort_desc">Port number of the AIS/GPS-Service (e.g. 9999 or 2947 for gpsd)</string>
+    <string name="einstellungenbearbeiten_bt_verbindungsdatenServer">BT Server Address </string>
+    <string name="einstellungenbearbeiten_mapLAT" > Map center LAT (N/S)</string>
+    <string name="einstellungenbearbeiten_mapLON" > Map center LON (W/E)</string>
+    <string name="einstellungenbearbeiten_shipLAT" > Ship Position LAT (N/S)</string>
+    <string name="einstellungenbearbeiten_shipLON" > Ship Position LON (W/E)</string>
+    <string name="einstellungenbearbeiten_deactivate_old_targets" > deactivate targets </string>
+    <string name="einstellungenbearbeiten_deactivate_old_targets_desc" > targets older then 6 min will be deactivated automatically</string>
+    <string name="einstellungenbearbeiten_delete_old_targets" > delete targets (older than 6 minutes)</string>
+    <string name="einstellungenbearbeiten_delete_old_targets_desc" > deactivated targets will be delete after 6 min</string>
+    <string name="einstellungenbearbeiten_show_own_ship_data" > show ship data</string>
+    <string name="einstellungenbearbeiten_show_satellite_map" > show satellite map</string>
+    <string name="einstellungenbearbeiten_use_gps_source" > set GPS-source</string>
+    <string name="einstellungenbearbeiten_save_position_data" > save Position data</string>
+    
+    <string name="einstellungenbearbeiten_data_directory">data directory</string>
+    <string name="einstellungenbearbeiten_data_directory_dec">Path to data directory</string>
+    <string name="einstellungenbearbeiten_route_directory" > Route</string>
+     <string name="einstellungenbearbeiten_route_directory_desc" >Path to Route directory</string>
+    <string name="einstellungenbearbeiten_track_directory" >Track</string>
+    <string name="einstellungenbearbeiten_track_directory_desc" >Path to Track directory</string>
+    
+    <string name="preferences_show_route_point_symbols">Show route point symbols</string>
+    <string name="preferences_showroute_point_sybols_desc">Show the route point symbols and enumeration on the map</string>
+    
+    <!-- Version 015 120314 added mapgenerator choice -->
+    <string name="preferences_map">Map settings</string>
+    <string name="preferences_map_view_mode">Map mode</string>
+	<string name="preferences_map_view_mode_desc">Select the operating mode</string>
+	<string name="preferences_map_filename_desc">Show path to the actual map file</string>
+	
+    <!-- Einstellungen bearbeiten keys -->
+    <string name="pref_mapfilename">mapfilename</string>
+    <string name="pref_shipname">shipname</string>
+    <string name="pref_alarmradius">alarmradius</string>
+    <string name="pref_mapCenterLAT">mapCenterLAT</string>
+	<string name="pref_mapCenterLON">mapCenterLON</string>
+	<string name="pref_OwnShipLAT">OwnShipLAT</string>
+	<string name="pref_OwnShipLON">OwnShipLON</string>
+	<string name="pref_username">username</string>
+	<string name="pref_password">password</string>
+	<string name="pref_bthost">bthost</string>
+	<string name="pref_btaddress">bt_address</string>
+    <string name="pref_host">host</string>
+	<string name="pref_port">port</string>
+	<string name="pref_deactivate_old_targets">deactivateoldtargets</string>
+	<string name="pref_delete_old_targets">deleteoldtargets</string>
+	<string name="pref_show_ship_data">showshipdata</string>
+	<string name="pref_show_sattelite_map">showsattelitemap</string>
+	<string name="pref_use_gps_source">usegpssource</string>
+	<string name="pref_save_position_data">savepositiondata</string>
+	
+	<string name="pref_data_directory_key">datadirectory</string>
+	<string name="pref_map_directory_key">mapdirectory</string>
+	<string name="pref_track_directory_key">trackdirectory</string>
+	<string name="pref_backup_ser_directory_key">backupsercachedirectory</string>
+	<string name="pref_backup_sercache_key">backupsercache</string>
+	<string name="pref_route_directory_key">routedirectory</string>
+	<string name="pref_online_cache_directory_key">onlinecachedirectory</string>
+	
+	<string name="pref_show_route_point_symbols">showroutepointsymbols</string>
+	
+	<!--  DeviceListActivity Bluetooth-->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- TCP Service Notifications  -->
+    <string name ="try_to_connect">Try to connect to server</string>
+    <string name ="try_to_connect_ok">Connected to server</string>
+    <string name ="try_to_connect_failed">Connect to server failed</string>
+    <string name ="tcp_network_service_terminated">TCP-Service terminated</string>
+    <string name ="tcp_network_service">TCP Network Service</string>
+    <string name ="delivering_ais_data">delivering new AIS-data!</string>
+	<string name ="no_network_data">no connection to AIS!</string>
+	<string name ="ais_runs">AIS runs!</string>
+	<string name ="no_new_ais_data">no new AIS data!</string>
+	<string name ="mapdownload_runs">downloading map</string>
+	<string name ="mapdownload_false">no map download possible!</string>
+	
+    <!-- Logger -->
+    <string name="flag_btn">Flag: %s</string>
+    <!-- Titles -->
+	<string name="monitoring_title">"Monitoring"</string>
+	<string name="clear_log">Clear Log</string>
+	<string name="enable_monitoring">Enable Monitoring</string>
+	<string name="disable_monitoring">Disable Monitoring</string>
+	<string name="enable_showdecodedaismsg">Show decoded AIS messages</string>
+	<string name="disable_showdecodedaismsg">Hide decoded AIS messages</string>
+	
+	     <!-- Strings for map file picker -->
+    <string name="cancel">Cancel</string>
+	<string name="error">Error</string>
+	<string name="ok">OK</string>
+    <string name="file_invalid">The selected file is invalid.</string>
+	<string name="file_select">Please select a file.</string>
+	<string name="file_size_byte">byte</string>
+	<string name="file_size_bytes">bytes</string>
+	<string name="file_size_kb">kB</string>
+	<string name="file_size_mb">MB</string>
+	<string name="file_size_gb">GB</string>
+	
+	    <!-- Strings for snap to location-->
+	<string name="snap_to_location_enabled">Snap to position is activated</string>
+	<string name="snap_to_location_disabled">Snap to position is disabled</string>
+	
+	    <!--  Strings for routes and tracks added 12_05_16-->
+	<string name="route_new_route">new route</string>
+	<string name="route_save_route">save route</string>
+	<string name="route_delete_route">delete route</string>
+	<string name="route_edit_route">edit route</string>
+	<string name="route_load_route">load route</string>
+	<string name="route_show_route">show route as text</string>
+	<string name="route_trace_route">trace route</string>
+	<string name="route_show_route_without_points">show route without points</string>
+	<string name="route_show_route_with_points">show route with points</string>
+	<string name="route_yes">yes</string>
+	<string name="route_no">no</string>
+	<string name="track_new_track">new track</string>
+	<string name="track_save_old_track">save old track?</string>
+	<string name="track_yes">yes</string>
+	<string name="track_no">no</string>
+	<string name="track_cancel">Cancel</string>
+	
+	<!--  String for loading a track added 13_07_17 -->
+	
+    <string name="menu_track">Track</string>
+	<string name="track_load_track">load track</string>
+</resources>

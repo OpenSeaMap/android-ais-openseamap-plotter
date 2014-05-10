@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+  <!-- important
+    here we only can read  or set prefs, which are strings
+    other datatypes set by prefs.edit().getType(key,value) will crash the app
+    this is not correct see checkBoxPreferences 12_10_30
+  -->
+  <!-- version 015 120315 mapgenerator choice added -->
+  <PreferenceCategory android:title="@string/preferences_map">
+		
+		<ListPreference
+		    android:title="@string/preferences_map_view_mode" 
+		    android:summary="@string/preferences_map_view_mode_desc"
+			android:entryValues="@array/preferences_map_generator_keys" 
+			android:entries="@array/preferences_map_generator_values"
+			android:key="mapGenerator" 
+			android:defaultValue="@string/preferences_map_generator_default" />
+		<EditTextPreference
+             android:title="@string/einstellungenbearbeiten_mapfilename"
+             android:summary="@string/preferences_map_filename_desc"
+             android:defaultValue=""
+             android:key="@string/pref_mapfilename"
+         />
+		<CheckBoxPreference android:title="@string/preferences_cache_persistence" 
+		    android:summary="@string/preferences_cache_persistence_desc"
+			android:key="cachePersistence" 
+			android:defaultValue="true"/>
+		
+		<CheckBoxPreference android:title="@string/preferences_log_tcp_data" 
+		    android:summary="@string/preferences_log_tcp_data_desc"
+			android:key="logTCPData" 
+			android:defaultValue="true"/>
+	</PreferenceCategory>
+	<!-- standard version --> 
+  
+  <PreferenceCategory
+    android:title="@string/einstellungenbearbeiten_aisTitel"
+  >
+   <!--  Einstellungen für 
+         internes oder externes GPS -->
+   <ListPreference
+      android:key="@string/pref_use_gps_source"
+      android:title="@string/einstellungenbearbeiten_use_gps_source"
+      android:entries="@array/use_gps_texte"
+      android:entryValues="@array/use_gps_values"
+      android:defaultValue="off"
+    />   
+    
+    <!--  Einstellungen für 
+         Positionsdaten laufend sichern -->
+   <ListPreference
+      android:key="@string/pref_save_position_data"
+      android:title="@string/einstellungenbearbeiten_save_position_data"
+      android:entries="@array/save_position_data"
+      android:entryValues="@array/save_position_values"
+      android:defaultValue="on"
+    />     
+   
+         
+         
+   <!--  Einstellungen für automatisches 
+         deaktivieren und löschen  alter AIS-targets -->
+    <ListPreference
+      android:key="@string/pref_deactivate_old_targets"
+      android:title="@string/einstellungenbearbeiten_deactivate_old_targets"
+      android:summary="@string/einstellungenbearbeiten_deactivate_old_targets_desc"
+      android:entries="@array/deactivate_texte"
+      android:entryValues="@array/deactivate_werte"
+      android:defaultValue="on"
+    />
+     <ListPreference
+      android:key="@string/pref_delete_old_targets"
+      android:title="@string/einstellungenbearbeiten_delete_old_targets"
+      android:summary="@string/einstellungenbearbeiten_delete_old_targets_desc"
+      android:entries="@array/deactivate_texte"
+      android:entryValues="@array/deactivate_werte"
+      android:defaultValue="on"
+    />
+  </PreferenceCategory>
+  
+  <PreferenceCategory
+    android:title="@string/einstellungenbearbeiten_verbindungsdatenTitel"
+  >
+     <!-- 12_10_30
+     <EditTextPreference
+      android:key="@string/pref_username"
+      android:title="@string/einstellungenbearbeiten_verbindungsdatenLogin"
+    />
+
+    <EditTextPreference
+      android:key="@string/pref_password"
+      android:title="@string/einstellungenbearbeiten_verbindungsdatenPasswort"
+    />
+ -->
+    <EditTextPreference
+      android:key="@string/pref_host"
+      android:title="@string/einstellungenbearbeiten_verbindungsdatenServer"
+      android:summary="@string/einstellungenbearbeiten_verbindungsdatenServer_desc"
+      
+    />
+    
+    <EditTextPreference
+      android:key="@string/pref_port"
+      android:title="@string/einstellungenbearbeiten_verbindungsdatenPort"
+      android:summary="@string/einstellungenbearbeiten_verbindungsdatenPort_desc"
+    />
+    <!--  12_10_30
+    <EditTextPreference
+      android:title="@string/einstellungenbearbeiten_bt_verbindungsdatenServer"
+    android:key="@string/pref_btaddress"/>
+  -->
+  </PreferenceCategory>
+  
+  <PreferenceCategory
+    android:title="@string/einstellungenbearbeiten_data_directory"
+  >  
+    <CheckBoxPreference android:title="@string/preferences_show_route_point_symbols" 
+          android:summary="@string/preferences_showroute_point_sybols_desc"
+			android:key="@string/pref_show_route_point_symbols" 
+			 android:defaultValue="true"
+	/>
+    
+     <EditTextPreference
+      android:key="@string/pref_route_directory_key"
+      android:title="@string/einstellungenbearbeiten_route_directory"
+      android:summary="@string/einstellungenbearbeiten_route_directory_desc"
+    />
+
+    <EditTextPreference
+      android:key="@string/pref_track_directory_key"
+      android:title="@string/einstellungenbearbeiten_track_directory"
+      android:summary="@string/einstellungenbearbeiten_track_directory_desc"
+    />
+
+   
+  
+  </PreferenceCategory>
+  
+  <PreferenceCategory
+    android:title="@string/einstellungenbearbeiten_titel"
+  >
+    <EditTextPreference
+      android:key="@string/pref_shipname"
+      android:title="@string/einstellungenbearbeiten_shipName"
+      android:defaultValue=""
+    />
+     
+    <ListPreference
+      android:key="@string/pref_alarmradius"
+      android:title="@string/einstellungenbearbeiten_alarmradius"
+      android:entries="@array/radius_texte"
+      android:entryValues="@array/radius_werte"
+      android:defaultValue="0"
+    />
+    
+    
+    <EditTextPreference
+      android:key="@string/pref_mapCenterLAT"
+      android:title="@string/einstellungenbearbeiten_mapLAT"
+      android:defaultValue=""
+    />
+    <EditTextPreference
+      android:key="@string/pref_mapCenterLON"
+      android:title="@string/einstellungenbearbeiten_mapLON"
+      android:defaultValue=""
+    />
+    
+     <EditTextPreference
+      android:key="@string/pref_OwnShipLAT"
+      android:title="@string/einstellungenbearbeiten_shipLAT"
+      android:defaultValue=""
+    />
+    <EditTextPreference
+      android:key="@string/pref_OwnShipLON"
+      android:title="@string/einstellungenbearbeiten_shipLON"
+      android:defaultValue=""
+    />
+    <ListPreference
+      android:key="@string/pref_show_ship_data"
+      android:title="@string/einstellungenbearbeiten_show_own_ship_data"
+      android:entries="@array/show_texte"
+      android:entryValues="@array/show_werte"
+      android:defaultValue="off"
+    />
+    <!--  12_10_30
+    <ListPreference
+      android:key="@string/pref_show_sattelite_map"
+      android:title="@string/einstellungenbearbeiten_show_satellite_map"
+      android:entries="@array/show_texte"
+      android:entryValues="@array/show_werte"
+      android:defaultValue="off"
+    />
+    
+    -->
+     
+  </PreferenceCategory>
+      
+</PreferenceScreen>

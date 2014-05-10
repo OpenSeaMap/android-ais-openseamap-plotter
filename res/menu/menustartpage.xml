@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+   <item android:id="@+id/opt_einstellungenAnzeigen" android:title="@string/startpage_einstellungenAnzeigen"></item>
+ <!--   <item android:id="@+id/opt_exportaisdata" android:title="@string/startpage_exportaisdata"></item>  -->
+   <item  android:id="@+id/opt_showinfo" android:title="@string/startpage_showinfo"></item>
+   <item  android:id="@+id/opt_startpage_pickmap" android:title="@string/startpage_pickmap"></item>
+ <!--    <item  android:id="@+id/opt_startpage_restore_Cache" android:title="@string/startpage_restore_cache"></item>  12_11_15 -->
+   <item  android:id="@+id/opt_startpage_show_log" android:title="@string/startpage_show_logger"></item>
+    
+</menu>
+ 
